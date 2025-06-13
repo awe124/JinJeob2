@@ -16,23 +16,42 @@
       height: auto;
       margin-bottom: 20px;
     }
+    .file-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 16px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
     .download-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 15px;
+      background-color: #4A536B;
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 15px;
     }
     .download-btn:hover {
-      background-color: #0056b3;
+      background-color: #3a4259;
+    }
+    .download-btn::after {
+      content: '⬇';
+      margin-left: 8px;
     }
   </style>
 </head>
 <body>
   <img src="description.png" alt="설명 이미지">
-  <br>
-  <a href="참가신청서.docx" class="download-btn" download>참가신청서 다운로드</a>
+
+  <div class="file-info">
+    남양주진접2 콘텐츠 스토리 공모전 참가신청서 (최종).docx (docx)
+    <a href="참가신청서.docx" class="download-btn" download>다운로드</a>
+  </div>
 </body>
 </html>
