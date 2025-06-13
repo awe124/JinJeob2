@@ -2,13 +2,37 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>프로젝트 설명 이미지</title>
+  <title>프로젝트 설명 이미지 및 참가신청서 다운로드</title>
   <style>
-    body { margin: 0; padding: 0; text-align: center; background-color: #f8f8f8; }
-    img { max-width: 100%; height: auto; }
+    body {
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
   <img src="description.png" alt="설명 이미지">
+  <br>
+  <a href="참가신청서.docx" class="download-btn" download>참가신청서 다운로드</a>
 </body>
 </html>
